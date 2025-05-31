@@ -21,8 +21,8 @@ const App = () => {
       setCurrentEmoji(getrandomEmoji());
     } else {
       //console.log("wrong");
-      setMessage(`wrong guess try again you have total points : ${countpoints}`);
-      setCountpoints(countpoints);
+      setMessage(`wrong guess try again you have Score : ${countpoints}`);
+      setCountpoints(0);
     }
   };
   return (
@@ -57,13 +57,13 @@ const App = () => {
           ))}
         </div>
         <p style={{ fontSize: "20px", fontWeight: "bold",color:"white"}}>
-          total points : {countpoints}
+          guess : {countpoints}
         </p>
         <h2
           style={{
             color:
               message ===
-              `wrong guess try again you have total points : ${countpoints}`
+              `wrong guess try again you have Score : ${countpoints}`
                 ? "red"
                 : "green",
           }}
