@@ -20,7 +20,7 @@ const App = () => {
       setCountpoints((prevpoint) => prevpoint + 1);
       setCurrentEmoji(getrandomEmoji());
     } else {
-      //console.log("wrong");
+      
       setMessage(`wrong guess try again you have Score : ${countpoints}`);
       setCountpoints(0);
     }
@@ -61,11 +61,7 @@ const App = () => {
         </p>
         <h2
           style={{
-            color:
-              message ===
-              `wrong guess try again you have Score : ${countpoints}`
-                ? "red"
-                : "green",
+              color: message.includes("wrong guess") ? "red" : "green",
           }}
         >
           {message}
