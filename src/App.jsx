@@ -39,7 +39,7 @@ const App = () => {
         }}
         className="card"
       >
-        <h2 style={{backgroundColor:"white"}}>Emoji mood guesser</h2>
+        <h2 style={{color:"white"}}>Emoji mood guesser</h2>
         <h1>{currentEmoji.emoji}</h1>
         <div className="buttons">
           {moodoptions.map((mood) => (
@@ -56,7 +56,7 @@ const App = () => {
             </button>
           ))}
         </div>
-        <p style={{ fontSize: "20px", fontWeight: "bold",backgroundColor:"white"}}>
+        <p style={{ fontSize: "20px", fontWeight: "bold",color:"white"}}>
           total points : {countpoints}
         </p>
         <h2
